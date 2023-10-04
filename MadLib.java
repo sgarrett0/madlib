@@ -10,10 +10,13 @@ public class MadLib{
          * I want to change "I" in the sentence below.
          * I can use substring to get a new string and replace word by word.
          *  */  
-        String sentence0 = "I knows, but I never got to say what I needed to say to you.";
+        String sentence0 = "I know(s), but I never got to say what I needed to say to you.";
         /**
          * Sentence after I:
          * Make sure you include the whitespace in the substring
+         * In some cases you will need 2 or more substrings for a sentence depending on
+         * How many changes are in that sentence and where the word you are changing is
+         * located in the sentence.
          *  */ 
         String firstReplacement = sentence0.substring(1, sentence0.length()-1);
         
@@ -32,7 +35,7 @@ public class MadLib{
 
         //Outputting my altered quote
         System.out.print(finalTemplate);
-        keyboardInput.close();
+        keyboardInput.close();//Make sure to close your scanner last!
     }
 
 }
